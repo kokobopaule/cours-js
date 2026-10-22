@@ -1,0 +1,23 @@
+//Sans reduction
+
+age : 15ans, prix : 1500 FCFA 
+age : 16ans, prix : 2500 FCFA 
+age : 17ans, prix : 2500 FCFA 
+age : 18ans, prix : 2500 FCFA 
+age : 19ans, prix : 2500 FCFA 
+age : 20ans, prix : 2500 FCFA 
+Recette totale : 20000 FCFA 
+Billet à 1500 FCFA : 5
+Billet à 2500 FCFA : 5
+
+\\ Apres reduction
+
+16 ans, votre billet coûte 2500 FCFA
+17 ans, votre billet coûte 2500 FCFA
+18 ans, votre billet coûte 2000 FCFA
+19 ans, votre billet coûte 2000 FCFA
+20 ans, votre billet coûte 2000 FCFA
+Recette totale : 18500 FCFA
+Billets à 1500 FCFA : 5
+Billets à 2500 FCFA : 2
+Billets à 2000 FCFA : 3
