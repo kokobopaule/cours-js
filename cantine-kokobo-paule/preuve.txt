@@ -1,4 +1,18 @@
 
+// données de la commande 
+const client = "Awa";
+const codePlat = 1;
+const quantiteTexte = "3";
+const montantVerse = 5000;
+
+// conversion de la quantité (texte en nombre)
+const quantite = Number(quantiteTexte);
+
+// verification des données
+if(codePlat < 1 || codePlat > 3 || !Number .isInteger(quantite) || quantite <= 0) {
+    console.log (" Erreur : code plat (1 à 3) ou quantité invalide");
+}
+
 // verification des données
 if(codePlat < 1 || codePlat > 3 || !Number .isInteger(quantite) || quantite <= 0) {
     console.log (" Erreur : code plat (1 à 3) ou quantité invalide");
@@ -29,17 +43,10 @@ switch ( codePlat) {
         }
         const total = calculerTotal(prixUnitaire, quantite);
 
-        // Récapitulatif
-        console.log(`client : ${client} `);
-        for (let i = 1; i <= quantite; i++) {
-            console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
-            }
-            console.log (`Total à payer : ${ total} FCFA`);
-            console.log(` Montant versé : ${montantVerse} FCFA`);
-if (montantVerse >= total) {
-    console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
-    } else {
-        console.log (`Montant manquant : ${total - montantVerse} FCFA`);
-    }
-}
-            
+        client : Awa
+portion 1 : Attiéké-poisson - 1500 FCFA
+portion 2 : Attiéké-poisson - 1500 FCFA
+portion 3 : Attiéké-poisson - 1500 FCFA
+Total à payer : 4500 FCFA
+Montant versé : 5000 FCFA
+monnaie à rendre : 
