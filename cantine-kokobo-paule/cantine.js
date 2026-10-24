@@ -30,3 +30,10 @@ if (codePlat < 1 || codePlat > 3 || !Number.isInteger(quantite) || quantite <= 0
     }
 
     const total = calculerTotal(prixUnitaire, quantite);
+
+portion 1 : Attiéké-poisson - 1500 FCFA
+portion 2 : Attiéké-poisson - 1500 FCFA
+portion 3 : Attiéké-poisson - 1500 FCFA
+Total à payer : 4500 FCFA
+Montant versé : 5000 FCFA
+monnaie à rendre : 500 FCFA
