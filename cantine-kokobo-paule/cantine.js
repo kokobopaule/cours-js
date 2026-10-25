@@ -1,8 +1,32 @@
-// données de la commande
-const client = "Awa";
 const codePlat = 1;
-const quantiteTexte = "3";
-const montantVerse = 5000;
+const quantite = 3;
 
-// conversion de la quantité (texte en nombre)
-const quantite = Number(quantiteTexte);
+// prix unitaire avec switch case
+    let nomPlat;
+    let prixUnitaire;
+
+    switch (codePlat) {
+        case 1:
+            nomPlat = "Attiéké-poisson";
+            prixUnitaire = 1500;
+            break;
+        case 2:
+            nomPlat = "Riz-poulet";
+            prixUnitaire = 2000;
+            break;
+        case 3:
+            nomPlat = "Alloco-oeuf";
+            prixUnitaire = 1000;
+            break;
+    }
+
+    // fonction qui retourne le montant total
+    function calculerTotal(prixUnitaire, quantite) {
+        return prixUnitaire * quantite;
+    }
+// Appel de la fonction, résultat stocké dans une variable
+    const total = calculerTotal(prixUnitaire, quantite);
+
+    console.log("prix unitaire : " + prixUnitaire);
+    console.log("quantité : " + quantite);
+    console.log("total à payer : " + total + " FCFA");
