@@ -30,4 +30,21 @@ if (codePlat < 1 || codePlat > 3 || quantite <= 0 || quantite % 1 !== 0) {
             prixUnitaire = 1000;
             break;
     }
+
+    // Appel de la fonction, résultat stocké dans une variable
+    const total = calculerTotal(prixUnitaire, quantite);
+
+    // Récapitulatif
+    console.log(`client : ${client}`);
+    for (let i = 1; i <= quantite; i++) {
+        console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
+    }
+    console.log(`Total à payer : ${total} FCFA`);
+    console.log(`Montant versé : ${montantVerse} FCFA`);
+
+    if (montantVerse >= total) {
+        console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
+    } else {
+        console.log(`Montant manquant : ${total - montantVerse} FCFA`);
+    }
 }
