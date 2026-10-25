@@ -1,13 +1,8 @@
-// Récapitulatif
-    console.log(`client : ${client}`);
-    for (let i = 1; i <= quantite; i++) {
-        console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
-    }
-    console.log(`Total à payer : ${total} FCFA`);
-    console.log(`Montant versé : ${montantVerse} FCFA`);
+// données de la commande
+const client = "Awa";
+const codePlat = 1;
+const quantiteTexte = "3";
+const montantVerse = 5000;
 
-    if (montantVerse >= total) {
-        console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
-    } else {
-        console.log(`Montant manquant : ${total - montantVerse} FCFA`);
-    }
+// conversion de la quantité (texte en nombre)
+const quantite = Number(quantiteTexte);
