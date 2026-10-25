@@ -1,32 +1,13 @@
-const codePlat = 1;
-const quantite = 3;
-
-// prix unitaire avec switch case
-    let nomPlat;
-    let prixUnitaire;
-
-    switch (codePlat) {
-        case 1:
-            nomPlat = "Attiéké-poisson";
-            prixUnitaire = 1500;
-            break;
-        case 2:
-            nomPlat = "Riz-poulet";
-            prixUnitaire = 2000;
-            break;
-        case 3:
-            nomPlat = "Alloco-oeuf";
-            prixUnitaire = 1000;
-            break;
+// Récapitulatif
+    console.log(`client : ${client}`);
+    for (let i = 1; i <= quantite; i++) {
+        console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
     }
+    console.log(`Total à payer : ${total} FCFA`);
+    console.log(`Montant versé : ${montantVerse} FCFA`);
 
-    // fonction qui retourne le montant total
-    function calculerTotal(prixUnitaire, quantite) {
-        return prixUnitaire * quantite;
+    if (montantVerse >= total) {
+        console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
+    } else {
+        console.log(`Montant manquant : ${total - montantVerse} FCFA`);
     }
-// Appel de la fonction, résultat stocké dans une variable
-    const total = calculerTotal(prixUnitaire, quantite);
-
-    console.log("prix unitaire : " + prixUnitaire);
-    console.log("quantité : " + quantite);
-    console.log("total à payer : " + total + " FCFA");
