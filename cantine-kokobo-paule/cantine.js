@@ -1,5 +1,7 @@
+const client = "Awa";
 const codePlat = 1;
 const quantite = 3;
+const montantVerse = 5000;
 
 if (!Number.isInteger(codePlat) || codePlat < 1 || codePlat > 3) {
     console.error("Erreur : le code du plat doit être compris entre 1 et 3.");
@@ -41,16 +43,15 @@ function calculerTotal(prixUnitaire, quantite) {
 const total = calculerTotal(prixUnitaire, quantite);
 
 // Récapitulatif
-    console.log(`client : ${client}`);
-    for (let i = 1; i <= quantite; i++) {
-        console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
-    }
-    console.log(`Total à payer : ${total} FCFA`);
-    console.log(`Montant versé : ${montantVerse} FCFA`);
+console.log(`client : ${client}`);
+for (let i = 1; i <= quantite; i++) {
+    console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
+}
+console.log(`Total à payer : ${total} FCFA`);
+console.log(`Montant versé : ${montantVerse} FCFA`);
 
-    if (montantVerse >= total) {
-        console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
-    } else {
-        console.log(`Montant manquant : ${total - montantVerse} FCFA`);
-    }
+if (montantVerse >= total) {
+    console.log(`monnaie à rendre : ${montantVerse - total} FCFA`);
+} else {
+    console.log(`Montant manquant : ${total - montantVerse} FCFA`);
 }
