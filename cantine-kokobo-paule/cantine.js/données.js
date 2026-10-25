@@ -6,3 +6,4 @@ const montantVerse = 5000;
 
 // conversion de la quantité (texte en nombre)
 const quantite = Number(quantiteTexte);
+
