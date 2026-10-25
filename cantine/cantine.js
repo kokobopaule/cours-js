@@ -1,7 +1,7 @@
 const client = "Awa";
-let codePlat = 1;
-let quantiteText = 3;
-let montantVerse = 5000;
+let codePlat = 3;
+let quantiteText = "4";
+let montantVerse = 4000;
 
 // fonction de calcul
 function calculerTotal(prixUnitaire, quantite) {
