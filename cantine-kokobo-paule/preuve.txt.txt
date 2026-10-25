@@ -56,6 +56,9 @@ if (montantVerse >= total) {
     console.log(`Montant manquant : ${total - montantVerse} FCFA`);
 }
 
+// commande d'execution
+ node cantine-kokobo-paule/cantine.js
+
 // resultat attendu
 portion 1 : Attiéké-poisson - 1500 FCFA
 portion 2 : Attiéké-poisson - 1500 FCFA
@@ -124,6 +127,10 @@ if (montantVerse >= total) {
 } else {
     console.log(`Montant manquant : ${total - montantVerse} FCFA`);
 }
+
+// commande executé
+ node cantine-kokobo-paule/cantine.js
+
 // resultat attendu
 client : Awa
 portion 2 : Riz-poulet - 2000 FCFA
@@ -190,6 +197,9 @@ if (montantVerse >= total) {
 } else {
     console.log(`Montant manquant : ${total - montantVerse} FCFA`);
 }
+
+// commande executé
+ node cantine-kokobo-paule/cantine.js
 
 // resultat attendu
 client : Awa
