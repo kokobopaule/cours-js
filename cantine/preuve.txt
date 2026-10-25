@@ -1,0 +1,19 @@
+PREUVES DES TESTS - caisse de la cantine
+auteur : kokobo paule
+
+test 1
+données utilisées :
+client = "Awa"
+codePlat = 1
+quantiteTexte = "3"
+montantVerse = 5000
+commande d'exécution = node cantine/cantine.js
+
+sortie obtenue :
+client : Awa
+portion 1 : Attiéké-poisson - 1500 FCFA
+portion 2 : Attiéké-poisson - 1500 FCFA
+portion 3 : Attiéké-poisson - 1500 FCFA
+Total à payer : 4500 FCFA
+Montant versé : 5000 FCFA
+monnaie à rendre : 500 FCFA
