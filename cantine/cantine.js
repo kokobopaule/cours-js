@@ -1,15 +1,13 @@
 const client = "Awa";
-let codePlat = 3;
-let quantiteText = "4";
-let montantVerse = 4000;
+let codePlat = 1;
+let quantiteText = "3";
+let montantVerse = 5000;
 
 // fonction de calcul
-function calculerTotal(prixUnitaire, quantite) {
-    return prixUnitaire * quantite;
-}
+let calculerTotal = (prixUnitaire, quantite) => { return prixUnitaire * quantite; };
 // conversion et verification
 const quantite = Number(quantiteText);
-
+    
 if (codePlat < 1 || codePlat > 3 || quantite <= 0 || quantite % 1 !== 0) {
     console.log("Données invalides :  le code entre 1 et 3, quantitité entière positive.");
 } else {
@@ -29,14 +27,18 @@ if (codePlat < 1 || codePlat > 3 || quantite <= 0 || quantite % 1 !== 0) {
             nomPlat = "Alloco-oeuf";
             prixUnitaire = 1000;
             break;
+        default:
+            console.log("Code de plat invalide.");
+            break;
     }
+
 
     // Appel de la fonction, résultat stocké dans une variable
     const total = calculerTotal(prixUnitaire, quantite);
 
     // Récapitulatif
     console.log(`client : ${client}`);
-    for (let i = 1; i <= quantite; i++) {
+    for (let i = 3; i <= quantite; i++) {
         console.log(`portion ${i} : ${nomPlat} - ${prixUnitaire} FCFA`);
     }
     console.log(`Total à payer : ${total} FCFA`);
@@ -47,4 +49,4 @@ if (codePlat < 1 || codePlat > 3 || quantite <= 0 || quantite % 1 !== 0) {
     } else {
         console.log(`Montant manquant : ${total - montantVerse} FCFA`);
     }
-}
+} 
